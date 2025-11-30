@@ -40,7 +40,7 @@ const nextConfig = {
     ],
   },
   typescript: {
-    ignoreBuildErrors: false, // ✅ Réactivé pour réactiver la vérification des types
+    ignoreBuildErrors: false, // ✅ Force la vérification des types au build pour plus de sécurité.
   },
   output: 'standalone', // ✅ Activé pour optimiser le déploiement Docker
   async headers() {
@@ -85,10 +85,10 @@ const nextConfig = {
       },
     ]
   },
-  // Ajoutez cette section pour ignorer les erreurs ESLint pendant le build
+  // Active la vérification ESLint pendant le build pour garantir la qualité du code.
   eslint: {
-    // Attention: Ceci permet de compiler en production même si votre projet a des erreurs ESLint.
-    ignoreDuringBuilds: true,
+    // Attention: Mettre à `true` désactivera la vérification ESLint lors du build.
+    ignoreDuringBuilds: false,
   },
 };
 
