@@ -7,8 +7,6 @@
     "project": ["./tsconfig.json"]
   },
   "rules": {
-    "no-console": "warn",
-    // Ajoutez ou modifiez des règles ici si nécessaire pour ESLint v9
-    // Par exemple, si vous rencontrez des erreurs spécifiques après la mise à jour.
+    "no-console": "warn"
   }
 }
